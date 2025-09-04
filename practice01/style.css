@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: bisque;
+}
+.menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+main h2 {
+    padding-bottom: 20px;
+}
+
+#about {
+    padding-bottom: 40px;
+}
+
+#about img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#projects .project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+aside {
+    padding: 10px;
+    background-color: darkgray;
+    list-style-position: inside;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: ghostwhite;
+}
