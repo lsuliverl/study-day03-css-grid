@@ -3,19 +3,6 @@
     padding: 0;
 }
 
-@media (max-width: 768px) {
-    .menu ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    main {
-        grid-template-columns: 1fr;
-    }
-    .project-container {
-        gap: 15px;
-    }
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -38,6 +25,16 @@ main {
 
 main h2 {
     padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    main {
+        grid-template-columns: 1fr;
+    }
 }
 
 #about {
@@ -84,6 +81,12 @@ main h2 {
 
 .project-card p {
     margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        gap: 15px;
+    }
 }
 
 aside {
