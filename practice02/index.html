@@ -9,12 +9,12 @@
     <body>
         <header class="site-header">
             <div class="container header-inner">
-                <a href="#" class="logo"><img src="./assets/wanted-logo.jpeg" /></a>
+                <a href="#" class="logo"><img src="./assets/wanted-logo.png" /></a>
                 <input type="checkbox" id="nav-toggle" class="nav-toggle" />
                 <label for="nav-toggle" class="nav-btn" aria-label="메뉴 열기"
                     ><span></span><span></span><span></span>
                 </label>
-                <nav class="menu">
+                <nav class="site-nav">
                     <ul>
                         <li>
                             <a
@@ -52,17 +52,21 @@
                 </nav>
             </div>
         </header>
-        <main>
+        <section class="hero">
+            <div class="container user-section">
+                <div class="user-welcome">
+                    <p class="user-hello">안녕하세요</p>
+                    <p class="user-name">***님</p>
+                </div>
+                <a class="user-info" href="https://id.wanted.jobs">내 정보 보기</a>
+            </div>
+        </section>
+        <main class="container">
             <div class="main-content">
-                <section class="profile" aria-labelledby="my-info">
-                    <h2 id="my-info">내 정보</h2>
-                    <p>안녕하세요 ***님</p>
-                    <a href="https://id.wanted.jobs">내 정보 자세히 보기</a>
-                </section>
                 <section class="job-listings" aria-labelledby="jobs">
                     <h2 id="jobs">채용 공고</h2>
                     <div class="job-items">
-                        <article class="job_opening">
+                        <article class="job-opening">
                             <img
                                 src="./assets/naver.webp"
                                 alt="네이버클라우드 AI Solution FE 개발 채용공고"
@@ -71,7 +75,7 @@
                             <p>네이버클라우드</p>
                             <p>경기 성남</p>
                         </article>
-                        <article class="job_opening">
+                        <article class="job-opening">
                             <img
                                 src="./assets/devDab.webp"
                                 alt="데브댑 프론트엔드 개발자 채용공고"
@@ -80,7 +84,7 @@
                             <p>데브댑</p>
                             <p>경기 화성</p>
                         </article>
-                        <article class="job_opening">
+                        <article class="job-opening">
                             <img
                                 src="./assets/nextGround.webp"
                                 alt="넥스트그라운드 [인턴] 프론트엔드 개발자 (전환형) 채용공고"
@@ -89,7 +93,7 @@
                             <p>넥스트그라운드</p>
                             <p>서울 강남</p>
                         </article>
-                        <article class="job_opening">
+                        <article class="job-opening">
                             <img
                                 src="./assets/cyclops.webp"
                                 alt="키클롭스 프론트엔드 개발 (React) 채용공고"
@@ -109,7 +113,7 @@
                 </section>
             </div>
         </main>
-        <footer>
+        <!-- <footer>
             <section aria-labelledby="company-info">
                 <h2 id="company-info">원티드</h2>
                 <p>(주)원티드랩</p>
@@ -169,6 +173,6 @@
                     </li>
                 </ul>
             </nav>
-        </footer>
+        </footer> -->
     </body>
 </html>
